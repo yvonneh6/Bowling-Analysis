@@ -46,8 +46,8 @@ RUN;
 
 PROC UNIVARIATE DATA=ResPred NORMAL PLOT; VAR E h a t ;
 RUN;
-May 1, 2019
- PROC SGPLOT DATA=ResPred ; scatter x=Yhat y=Ehat;
+
+PROC SGPLOT DATA=ResPred ; scatter x=Yhat y=Ehat;
 RUN;
 
 PROC MIXED DATA = Bowling ; CLASS Bowler;
