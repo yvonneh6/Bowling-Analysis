@@ -70,7 +70,8 @@ PROC SGPLOT DATA=ResPred ;
 scatter x=Yhat y=Ehat;
 RUN;
 
-PROC MIXED DATA = Bowling ; CLASS Bowler;
+PROC MIXED DATA = Bowling ; 
+CLASS Bowler;
 MODEL Score=;
 RANDOM Bowler ;
 TITLE ’ Results_from_Proc_Mixed ’ ;
